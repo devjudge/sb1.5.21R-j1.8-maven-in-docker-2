@@ -14,5 +14,8 @@ public class AppController {
     public String hello() {
         return "Hello World!!";
     }
-
+@PostMapping("/number")
+    public String addnum(@RequestParm (value = " number1") int number1,@ReuqestParm (value = " number2") int number2) {
+        return (number1+number2);
+    }
 }
