@@ -14,6 +14,7 @@ tasks:
           bash verify_connection_url.sh 8080 BACKEND_MICRO_PROJECT && exit
 ports:
   - port: 8080
+    name: "Backend Server"
     onOpen: open-preview
     visibility: public
   - port: 3306
